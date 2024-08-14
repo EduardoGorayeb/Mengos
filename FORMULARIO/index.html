@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body{
+            background-color: #faebd6;
+            font-family: Verdana;
+        }
+        input{
+            border-radius: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Página de Estudos</h1>
+    <h1 style="color: crimson;">Formulário</h1>
+
+    <form method="get" action="envio_dados.php">
+        <input type="text" name="nome" placeholder="Digite seu nome"><br>
+        <input type="email" name="email" placeholder="Digite seu e-mail"><br>
+        <input type="submit" name="enviar" value="Enviar"><br>
+    </form>
+
+    <h1 style="color: crimson;">Pop-up</h1>
+
+    <form>
+        <input type="button" value="Clique Aqui" onclick="msg()">
+    </form>
+
+    <script>
+        function msg() {
+            alert("Você clicou no botão!");
+        }
+    </script>
+
+    <h1 style="color: crimson;">Checkbox</h1>
+
+    <form>
+        <input type="checkbox" name="veiculo1" value="bicicleta">Eu tenho uma bicicleta<br>
+        <input type="checkbox" name="veiculo2" value="carro">Eu tenho um carro<br>
+        <input type="checkbox" name="veiculo3" value="moto">Eu tenho uma moto<br>
+    </form>
+
+    <h1 style="color: crimson;">Seleção de cor</h1>
+
+    <form>
+        Selecione sua cor preferida: <input type="color" name="favcor" value="#0000FF">
+    </form>
+
+    <h1 style="color: crimson">Data</h1>
+
+    <form>
+        Data de nascimento: <input type="date" name="nascimento">
+    </form>
+
+    <h1 style="color: crimson">Data e hora</h1>
+
+    <form>
+        Data de nascimento: <input type="datetime-local" name="bdaytime">
+    </form>
+
+    <h1 style="color: crimson;">Entrada de e-mail</h1>
+
+    <form>
+        E-mail: <input type="email" name="e-mail" placeholder="Digite seu e-mail aqui">
+    </form>
+
+    <h1 style="color: crimson;">Seleção de arquivos</h1>
+
+    <form>
+        <input type="file" name="arquivos">
+    </form>
+
+    <h1 style="color: crimson;">Seleção de múltiplos arquivos</h1>
+     
+    <form>
+        <input type="file" name="arquivos" multiple>
+     </form>
+
+     <h1 style="color: crimson;">Campo para inserir números</h1>
+
+     <form>
+        Quantidade (entre 1 e 5): <input type="number" name="quantidade" min="1" max="5">
+     </form>
+
+     <h1 style="color: crimson;">Campo para digitar senha</h1>
+
+     <form>
+        <input type="password" name="senha" placeholder="Digite sua senha">
+     </form>
+
+    <h1 style="color: crimson;">Campo para assinalar</h1>
+
+     <form>
+        <p>Qual sua idade?</p>
+        <input type="radio" name="idade" value="18_22">18 a 22<br>
+        <input type="radio" name="idade" value="23_30">23 a 30<br>
+        <input type="radio" name="idade" value="mais31">Acima de 31<br>
+     </form>
+
+     <h1 style="color: crimson;">Barra de nível</h1>
+
+     <form>
+        Defina seu nível de satisfação:<br>
+        Pouco satisfeito
+        <input type="range" name="satisfacao" value="0" min="0" max="10" oninput="display.value=value" onchange="display.value=value">
+        Muito satisfeito
+        <input type="text" id="display" value="0" oninput="vol.value=value" onchange="vol.value=value">
+     </form>
+
+     <h1 style="color: crimson;">Resetar informações</h1>
+
+     <form>
+        <label for="email">Digite seu e-mail</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="pin">Digite seu código</label>
+        <input type="text" id="pin" name="pin" maxlength="4"><br><br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+
+    <h1 style="color: crimson;">Barra de pesquisa</h1>
+
+    <form>
+        Pesquisar: <input type="search" name="q">
+    </form>
+
+    <h1 style="color: crimson;">Input para enviar o formulário</h1>
+
+    <form>
+        <input type="submit" value="Enviar Formulário">
+    </form>
+
+    <h1 style="color: crimson;">Formulário comum (texto)</h1>
+
+    <form>
+        Nome: <input type="text" name="nome"><br>
+        Sobrenome: <input type="text" name="sobrenome"><br>
+        Endereço: <input type="text" name="endereco">
+    </form>
+
+    <h1 style="color: crimson;">Caixa para validação de número de telefone</h1>
+
+    <form>
+        Telefone: <input type="tel" name="usertel">
+    </form>
+
+    <h1 style="color: crimson;">Seleção de horário</h1>
+
+    <form>
+        Escolha o horário: <input type="time" name="usr_horario">
+    </form>
+
+    <h1 style="color: crimson;">Caixa para validação de links</h1>
+
+    <form>
+        Link do seu WebSite: <input type="url" name="webpage">
+    </form>
+
+    <h1 style="color: crimson;">Área de texto em branco e com escrita</h1>
+
+    <form>
+        <textarea></textarea>
+
+        <textarea>Área de texto com um texto inicial dentro</textarea>
+    </form>
+
+    <h1 style="color: crimson;">Caixa de seleção</h1>
+
+    <form>
+        <select name="lista" id="lista">
+            <option>Selecione uma opção</option>
+            <option>Macarrão</option>
+            <option>Pizza</option>
+            <option>Nhoque</option>
+            <option>Canelone</option>
+        </select>
+    </form>
+
+    <h1 style="color: crimson;">Borda e título do formulário</h1>
+
+    <!-- "fieldset" é o comando utilizado para delimitar a área do formulário, cria uma borda -->
+
+    <fieldset>
+        <legend>Formulário</legend>
+    </fieldset>
+</body>
+</html>
