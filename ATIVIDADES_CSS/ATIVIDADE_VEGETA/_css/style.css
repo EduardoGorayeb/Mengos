@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+}
+body{
+    background-image: url(../_img/vegeta.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center top;
+    background-color: darkslategrey;
+}
+#img1{
+    aspect-ratio: 1/1;
+    width: 15%;
+    border-radius: 50%;
+    border: 5px solid gold;
+    position: ;
+}
+#img2{
+    position: relative;
+    left: 1050px;
+    bottom: 100px;
+}
