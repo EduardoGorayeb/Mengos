@@ -1,0 +1,56 @@
+*{
+    text-align: center;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#css{
+    color: salmon;
+}
+hr{
+    border: 8px solid black;
+}
+.hr_line{
+    border: 8px solid black;
+    color: white;
+    height: 1px;
+}
+img{
+    width: 200px;
+    height: 150px;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#p1{
+    font-size: small;
+}
+#p2{
+    font-weight: bold;
+    background-color: lightskyblue;
+}
+#p3{
+    color: magenta;
+    font-weight: 1000;
+    font-family: 'Times New Roman', Times, serif;
+}
+#h2-1{
+    border: solid #808000;
+    font-weight: lighter;
+}
+#h2-2{
+    border: solid #808000;
+    font-family: 'Times New Roman', Times, serif;
+    color: #418f62;
+    text-decoration: underline;
+}
+#h1-1{
+    font-size: 50px;
+    text-decoration: underline;
+    font-style: italic;
+    color: salmon;
+    background-color: blueviolet;
+}
