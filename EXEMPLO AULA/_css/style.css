@@ -1,0 +1,18 @@
+h1{
+    background-color: aqua;
+}
+h2{
+    background-color: darkorange;
+}
+body{
+    background-image: url('https://i.pinimg.com/474x/8b/ff/4a/8bff4a7645a1a2f322e0add49180cef8.jpg');
+    background-size: 15%;
+    /* background-repeat: repeat-x; (repete a imagem horizontamente) */
+    /* background-repeat: repeat-y; (repete a imagem verticalmente) */
+    /* background-repeat: no-repeat; (coloca a imagem apenas uma vez) */
+    background-repeat: no-repeat;
+    /* background-position: right bottom; (repete a imagem no local designado (nesse caso, right top[canto inferior direito])) */
+    background-position: right bottom;
+    /* background-attachment; (define a localização da imagem ao movimentar a página) */
+    background-attachment: fixed;
+}
