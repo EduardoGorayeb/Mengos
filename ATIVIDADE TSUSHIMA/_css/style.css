@@ -1,0 +1,61 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    text-align: center;
+    background-image: url('../_img/japao.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+}
+h1{
+    color: salmon;
+    text-shadow: 2px 2px 2px #000;
+}
+.td1{
+    font-weight: bold;
+}
+#tb1{
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid lightyellow;
+    th{
+        background-color: darkred;
+        color: white;
+        border: 2px solid lightyellow;
+    }
+    td{
+        background-color: lightgray;
+        border: 2px solid lightyellow;
+    }
+}
+img{
+    width: 275px;
+    height: 140px;
+}
+hr{
+    border: 5px solid salmon;
+}
+#tb2{
+    margin: auto;
+    width: 50%;
+    border: 2px solid lightyellow;
+    td{
+        background-color: lightgray;
+        border: 2px solid lightyellow;
+        text-align: right;
+    }
+}
+button{
+    color: red;
+    margin: right;
+    text-shadow: 0px 0px 2px black;
+}
+input{
+    width: 100%;
+    background-color: lightgray;
+    border: none;
+}
+h2{
+    color: white;
+    font-family: cursive;
+}
