@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='_css/style.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h2>Exemplos de Formulário em HTML</h2>
+    <hr>
+    <h3>Exemplo 01</h3>
+    <form id="exemplo01">
+        <input type="text" placeholder="Nome" name="nome">
+        <input type="email" placeholder="Email" name="email">
+        <input type="tel" placeholder="Celular" name="celular">
+        <input type="password" placeholder="Senha" name="senha">
+        <button type="submit">Cadastrar</button>
+    </form>
+    <hr>
+    <h3>Exemplo 02</h3>
+    <textarea id="exemplo02" rows="4" cols="100">
+    </textarea>
+    <h3>Exemplo 03</h3>
+    <form id="exemplo03">
+        <fieldset>
+            <legend>Formulários</legend>
+            <label for="name">Nome:</label>
+            <input type="text" name="name"><br><br>
+            <label for="sex">Sexo:</label>
+            <input type="radio" name="sex" id="male" value="male">
+            <label for="male">Masculino</label>
+            <input type="radio" name="sex" id="female" value="female">
+            <label for="female">Feminino</label><br><br>
+            <label for="country">País: </label>
+            <select name="country" id="country">
+                <option>Selecione uma opção</option>
+                <option>Brasil</option>
+                <option>Rússia</option>
+                <option>Índia</option>
+                <option>China</option>
+                <option>África do Sul</option>
+            </select><br><br>
+            <label for="message">Mensagem:</label><br>
+            <textarea name="message" id="message" cols="30" rows="4"></textarea><br><br>
+            <input type="checkbox" name="newsletter" id="newsletter">
+            <label for="newsletter">Assinar Newsletter?</label><br><br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+    <hr>
+    <h3>Exemplo 04</h3>
+    <form id="exemplo04" method="GET" action="https://www.google.com/search" target="_blank">
+        <input type="text" name="q">
+        <input type="submit" value="Clique para pesquisar">
+    </form>
+    <hr>
+    <h3>Exemplo 05</h3>
+    <form id="exemplo05">
+        <fieldset>
+            <legend>Selecione a cor que mais te agrada:</legend>
+            <p></p>
+            <input type="checkbox" name="area1" value="azul">Azul
+            <input type="checkbox" name="area2" value="vermelho">Vermelho
+            <input type="checkbox" name="area3" value="verde">Verde
+            <input type="checkbox" name="area4" value="amarelo">Amarelo
+            <p></p>
+        </fieldset>
+    </form>
+</body>
+</html>
