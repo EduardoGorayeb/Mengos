@@ -7,16 +7,17 @@ body{
     background-size: 50%;
     background-position: center top;
     background-color: darkslategrey;
+    background-attachment: fixed;
+    
 }
 #img1{
-    aspect-ratio: 1/1;
     width: 15%;
+    aspect-ratio: 1/1;
     border-radius: 50%;
     border: 5px solid gold;
-    position: ;
 }
 #img2{
+    width: 20%;
     position: relative;
-    left: 1050px;
-    bottom: 100px;
+    float: right;
 }
