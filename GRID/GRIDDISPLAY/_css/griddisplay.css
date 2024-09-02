@@ -1,0 +1,85 @@
+*{
+    font-family: verdana;
+}
+body{
+    background-color: #faebd6;
+    h1{
+        color: crimson;
+        text-align: center;
+    }
+}
+.container{
+    display: grid;
+    grid-template-columns: 30px 30px 30px;
+    grid-template-rows: 30px 30px 30px;
+}
+.container2{
+    display: grid;
+    grid-template-columns: 30% 60%;
+    grid-template-rows: 30px 80px 30px;
+    grid-template-areas: 
+    "cabecalho cabecalho"
+    "lateral conteudo"
+    "rodape rodape";
+    text-align: center;
+    gap: 20px 50px;
+    justify-items: center;
+    align-items: center;
+}
+.container3{
+    display: grid;
+    grid-template-columns: 30% 60%;
+    grid-template-rows: 30px 80px 30px;
+    grid-template-areas: 
+    "cabecalho cabecalho"
+    "lateral conteudo"
+    "rodape rodape";
+    text-align: center;
+    gap: 20px 50px;
+    justify-content: center;
+}
+.container4{
+    display: grid;
+    grid-template-areas: 
+    "linha1 linha1 linha1"
+    "linha2 linha3 linha3"
+    "linha4 linha4 linha4";
+    text-align: center;
+    grid-auto-rows: 100px;
+    grid-auto-columns: 20%;
+    gap: 10px;
+    justify-content: center;
+}
+.linha1{
+    grid-area: linha1;
+}
+.linha2{
+    grid-area: linha2;
+}
+.linha3{
+    grid-area: linha3;
+}
+.linha4{
+    grid-area: linha4;
+}
+.linha1, .linha2, .linha3, .linha4{
+    border: 2px solid blue;
+    border-style: dotted;
+    border-radius: 10px;
+}
+.cabecalho{
+    grid-area: cabecalho;
+    border: 1px solid;
+}
+.lateral{
+    grid-area: lateral;
+    border: 1px solid;
+}
+.conteudo{
+    grid-area: conteudo;
+    border: 1px solid;
+}
+.rodape{
+    grid-area: rodape;
+    border: 1px solid;
+}
