@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../static/_css/style.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src='../static/_js/main.js'></script>
+</head>
+<body>
+    <form action="login" method="get">
+        <div class="divlogin">
+            <label for="name">Nome</label><br>
+            <input type="text" name="text" required placeholder="Digite seu nome"><br>
+            <label for="senha">Senha</label><br>
+            <div class="password"><input type="password" name="senha" id="senha" required placeholder="Digite sua senha"><i class="bi bi-eye" id="btn-senha" onclick="mostrarSenha()"></i></div><br>
+            <button type="submit">Entrar</button>
+        </div>
+        </fieldset>
+    </form>
+</body>
+</html>

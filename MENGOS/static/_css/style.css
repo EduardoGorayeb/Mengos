@@ -1,0 +1,52 @@
+*{
+    font-family: verdana;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(58, 58, 58);
+}
+.divlogin{
+    max-width: 50vh;
+    background-color: rgb(211, 211, 211);
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 20vh;
+    padding: 20px;
+}
+label{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    border-radius: 5px;
+    padding: 5px;
+}
+button{
+    display: flex;
+    margin: auto;
+    border-radius: 5px;
+    padding: 7px;
+    background-color: #303030;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 2px 2px 4px rgb(29, 29, 29);
+}
+button:hover{
+    transform: scale(1.05);
+    background-color: #474747;
+}
+.password{
+    position: relative;
+}
+.password i{
+    position: absolute;
+    right: 5%;
+    padding: 5px 0px;
+    cursor: pointer;
+}
