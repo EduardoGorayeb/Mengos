@@ -4,11 +4,18 @@
 body{
     background-image: url(../_img/vegeta.png);
     background-repeat: no-repeat;
+<<<<<<< HEAD
     background-size: 50%;
     background-position: center top;
     background-color: darkslategrey;
     background-attachment: fixed;
     
+=======
+    background-size: 55%;
+    background-position: center;
+    background-color: #333333;
+    font-family: verdana;
+>>>>>>> a01125a1cb2681bee8634d81e1b4120cd15fc59c
 }
 #img1{
     width: 15%;
@@ -17,7 +24,46 @@ body{
     border: 5px solid gold;
 }
 #img2{
+<<<<<<< HEAD
     width: 20%;
     position: relative;
     float: right;
+=======
+    float: right;
+    width: 30%;
+}
+table{
+    width: 90%;
+}
+table, th, td{
+    opacity: 1;
+    height: 35px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid #2a5f9a;
+    border-spacing: 0px;
+    th{
+        background-color: gold;
+    }
+    td{
+        background-color: #333333;
+        color: white;
+        font-family: arial;
+    }
+}
+div{
+    background-color: rgb(0, 0, 0,0.5);
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px black;
+}
+h1{
+    color:blue;
+    text-align: center;
+    text-shadow: 4px 4px 4px #000;
+}
+h3{
+    color: gold;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000;
+>>>>>>> a01125a1cb2681bee8634d81e1b4120cd15fc59c
 }

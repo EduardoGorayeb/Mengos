@@ -1,0 +1,63 @@
+*{
+    font-family: verdana;
+}
+#exemplo02{
+    resize: none;
+    padding: 12px;
+    background-color: lightblue;
+    color: blue;
+}
+#exemplo03 fieldset{
+    border: purple;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+    color: purple;
+}
+#exemplo03 input, textarea, option{
+    color: blue;
+    font-size: 12px;
+    resize: none;
+}
+h2, h3{
+    color: darkred;
+}
+hr{
+    border: solid 10px darkred;
+    border-radius: 15px;
+}
+#exemplo01 input{
+    padding: 12px;
+    background-color: lightblue;
+    color: blue;
+}
+#exemplo01 button{
+    padding: 12px;
+    color: black;
+    background-color: gold;
+    border-radius: 10px;
+    border: 5px solid darkorchid;
+}
+#exemplo04 input{
+    color: red;
+    padding: 15px;
+    font-size: 20px;
+    border: 2px solid red;
+}
+#exemplo04 input[type=submit]{
+    border-radius: 15px;
+    background-color: black;
+}
+#exemplo05 legend{
+    font-size: 15px;
+    color: darkgreen;
+    font-weight: bold;
+    font-style: italic;
+}
+#exemplo05 fieldset{
+    border: solid 5px darkgoldenrod;
+    font-size: 15px;
+    color: darkgreen;
+    font-weight: bold;
+    font-style: italic;
+}

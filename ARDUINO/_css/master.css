@@ -1,0 +1,196 @@
+* {
+     font-family: verdana;
+     margin: 0px;
+}
+
+.input1[type='radio'] {
+     accent-color: lime;
+}
+
+.input2[type='radio']{
+     accent-color: red;
+}
+
+span{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+#reveal{
+     top: 115px;
+}
+
+button{
+     background-color: white;
+     color: white;
+     border-radius: 50px;
+     font-size: 1px;
+     padding: 4.5px;
+     margin-right: 5px;
+}
+
+.button1:hover{
+     background-color: #00f0b5;
+     cursor: pointer;
+}
+
+.button2:hover{
+     background-color: #4646e6;
+     cursor: pointer;
+}
+
+body {
+     width: 100%;
+     height: 100vh;
+     background-color: black;
+     background-size: cover;
+}
+
+input{
+     resize: none;
+}
+
+#blinking {
+     color: white;
+     font-family: monospace;
+     font-size: 30px;
+     animation: typing 3s steps(23);
+     white-space: nowrap;
+     border-right: 4px solid;
+     overflow: hidden;
+     width: 23ch;
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blinking{
+    50%{
+        border-color: transparent;
+    }
+}
+
+.rev-block {
+     font-weight: bold;
+     color: #fff;
+     text-transform: uppercase;
+     padding: 0.8px 2px;
+}
+
+.rev-block {
+     position: absolute;
+}
+
+.rev-block span {
+     opacity: 0;
+     animation: appear-text 0.0001s linear forwards;
+     animation-delay: 4.5s;
+}
+
+.rev-block:after {
+     content: '';
+     top: 0;
+     left: 0;
+     position: absolute;
+     width: 0%;
+     height: 100%;
+     background: #00f0b5;
+     animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+     animation-delay: 3.9s;
+}
+
+@keyframes rev-block {
+
+     0% {
+          left: 0;
+          width: 0%;
+     }
+     50% {
+          left: 0;
+          width: 100%;
+     }
+     100% {
+          left: 100%;
+          width: 0%;
+     }
+
+}
+
+@keyframes appear-text {
+
+     0% {
+          opacity: 0;
+     }
+     100% {
+          opacity: 1;
+     }
+
+}
+
+#onemore {
+     top: 150px;
+}
+
+#onemore span {
+     animation-delay: 5s;
+}
+
+#onemore.rev-block:after {
+     background: #4646e6;
+     animation-delay: 4.4s;
+}
+
+@media only screen and (max-width: 900px) {
+     p {
+          font-size: 20px;
+          padding: 0.4em;
+     }
+}
+
+form{
+     display: flex;
+     justify-content: center;
+}
+
+fieldset{
+     border: 3px solid #9fecd8;
+     border-radius: 10px;
+     border-style: dotted;
+     margin-top: 15px;
+     height: 35px;
+}
+.container{
+     display: flex;
+     padding: 0;
+     justify-content: center;
+     width: 68%;
+     height: 100%;
+     border-left: 1px solid white;
+     border-right: 1px solid white;
+}
+#aside1{
+     width: 15%;
+     height: 100%;
+     float: left;
+     padding: 0px;
+     img{
+          width: 170px;
+          height: 176px;
+     }
+     /* Redimensiona a imagem com o site pra ter a largura de 228px e deixa ajustar a altura automaticamente */
+}
+#aside2{
+     width: 15%;
+     height: 100%;
+     float: right;
+     padding: 0px;
+     img{
+          width: 188px;
+          height: 176px;
+     }
+     /* Redimensiona a imagem com o site pra ter a largura de 228px e deixa ajustar a altura automaticamente */
+}
