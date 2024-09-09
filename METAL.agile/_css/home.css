@@ -14,7 +14,6 @@ body{
     grid-template-rows: 15vh 220vh 6.8vh;
 }
 .header{
-    height: 15vh;
     grid-area: header;
     background-color: #10454F;
     display: flex;
@@ -29,9 +28,9 @@ body{
     }
     .a1{
         color: white;
-        font-size: 1rem;
+        font-size: 20px;
         display: flex;
-        margin: 15px;
+        margin: 50px;
     }
     .a1:hover{
         color: rgb(201, 201, 201);
@@ -39,7 +38,7 @@ body{
         transform: scale(1.05);
     }
     #a1{
-        margin-left: 200px;
+        margin-left: 400px;
     }
     .paragraph{
         display: flex;
@@ -52,18 +51,19 @@ body{
     }
     button{
         margin: 15px;
-        padding: 5px;
+        padding: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 125px;
-        height: 50px;
-        max-block-size: 35%;
+        width: 170px;
+        height: 65px;
+        max-block-size: 50%;
         border: none;
         border-radius: 10px;
         background-color: #4C808B;
         color: white;
         font-weight: bold;
+        font-size: 20px;
     }
     button:hover{
         background-color: #55929e;
@@ -92,7 +92,7 @@ body{
 }
 
 .slides{
-    width: 400%;
+    width: 400%; /*400% pois cada imagem corresponde a 100% da tela e há 4 imagens, portanto, só aparecerá uma por vez*/
     display: flex;
     height: 400px;
 }
@@ -113,7 +113,7 @@ body{
 .navigation-manual {
     position: absolute;
     width: 99vw;
-    margin-top: -12vh; /*Diminui a margem superior padrão*/
+    margin-top: 10vh;
     display: flex;
     justify-content: center;
 }
@@ -168,7 +168,7 @@ será dada como 0, em relação ao primeiro elemento, ou seja, mostrará a prime
 .navigation-auto { /*Define configurações para o navigation auto como um todo*/
     position: absolute;
     width: 99vw;
-    margin-top: 54vh;
+    margin-top: 52vh;
     display: flex;
     justify-content: center;
 }
@@ -218,14 +218,14 @@ h1 {
     cursor: pointer;
     }
     #p1{
-        font-size: 15px;
+        font-size: 20px;
         margin-top: 45vh;
         margin-left: 10vw;
         text-align: justify;
     }
     #p2{
         color: #10454F;
-        font-size: 15px;
+        font-size: 20px;
         margin-top: 57vh;
         margin-left: 10vw;
     }

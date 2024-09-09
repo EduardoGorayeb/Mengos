@@ -10,7 +10,7 @@ body{
     "header header header"
     "aside1 main aside2"
     "footer footer footer";
-    grid-template-columns: 5% 90% 5%;
+    grid-template-columns: 10% 80% 10%;
     grid-template-rows: 15vh 75vh 10vh;
 }
 .header{
@@ -28,9 +28,9 @@ body{
     }
     .a1{
         color: white;
-        font-size: 1rem;
+        font-size: 20px;
         display: flex;
-        margin: 15px;
+        margin: 50px;
     }
     .a1:hover{
         color: rgb(201, 201, 201);
@@ -38,7 +38,7 @@ body{
         transform: scale(1.05);
     }
     #a1{
-        margin-left: 200px;
+        margin-left: 400px;
     }
     .paragraph{
         display: flex;
@@ -51,18 +51,19 @@ body{
     }
     button{
         margin: 15px;
-        padding: 5px;
+        padding: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 125px;
-        height: 50px;
-        max-block-size: 35%;
+        width: 170px;
+        height: 65px;
+        max-block-size: 50%;
         border: none;
         border-radius: 10px;
         background-color: #4C808B;
         color: white;
         font-weight: bold;
+        font-size: 20px;
     }
     button:hover{
         background-color: #55929e;
@@ -85,7 +86,7 @@ body{
     gap: 20px;
     div{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
     }
     img{
         margin: 10px;
@@ -101,9 +102,18 @@ body{
         font-weight: bold;
     }
     p{
-        margin: 20px;
+        display: flex;
+        justify-content: space-around;
         text-align: justify;
         text-indent: 50px;
+        font-size: 18px;
+    }
+    .click{
+        font-size: 20px;
+        text-align: center;
+    }
+    h1{
+        margin-left: 40px;
     }
 }
 .aside2{
