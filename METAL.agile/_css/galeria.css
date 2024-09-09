@@ -1,25 +1,152 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: verdana;
+}
 body{
+    font-size: 16px;
     display: grid;
     grid-template-areas: 
     "header header header"
-    "aside main aside"
+    "aside1 main aside2"
     "footer footer footer";
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 5% 90% 5%;
     grid-template-rows: 15vh 75vh 10vh;
 }
-header{
+.header{
     grid-area: header;
-    background-color: purple;
+    background-color: #10454F;
+    display: flex;
+    img{
+        display: flex;
+        margin-top: 1%;
+        margin-left: 1%;
+        position: absolute;
+        height: 100px;
+        max-block-size: 10%;
+        min-block-size: 10%;
+    }
+    .a1{
+        color: white;
+        font-size: 1rem;
+        display: flex;
+        margin: 15px;
+    }
+    .a1:hover{
+        color: rgb(201, 201, 201);
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+    #a1{
+        margin-left: 200px;
+    }
+    .paragraph{
+        display: flex;
+        margin: auto;
+    }
+    .buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        margin: 15px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 125px;
+        height: 50px;
+        max-block-size: 35%;
+        border: none;
+        border-radius: 10px;
+        background-color: #4C808B;
+        color: white;
+        font-weight: bold;
+    }
+    button:hover{
+        background-color: #55929e;
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
 }
-aside{
-    grid-area: aside;
-    background-color: blue;
+.aside1{
+    grid-area: aside1;
 }
-main{
+.main{
     grid-area: main;
-    background-color: aqua;
+    ul{
+        list-style-type: none;
+        display: flex;
+        gap: 60px;
+        animation: 100s infinite carrossel linear;
+    }
+    ul:hover{
+        animation-play-state: paused;
+    }
+    .carrossel{
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        height: 65vh;
+        display: grid;
+        place-content: center;
+        overflow: hidden;
+    }
+    img{
+        width: auto;
+        height: 50vh;
+        transition: all 0.3s;
+    }
+    img:hover{
+        transform: scale(1.05);
+    }
+    .logo{
+        width: 250px;
+        height: 250px;
+    }
 }
-footer{
+@keyframes carrossel{
+    from{
+        transform: translateX(0px)
+    }
+    to{
+        transform: translateX(-13000px)
+    }
+}
+.aside2{
+    grid-area: aside2;
+}
+.footer{
+    height: 6.9vh;
     grid-area: footer;
-    background-color: purple;
+    background-color: #061f24;
+    display: flex;
+    position: aboslute;
+    bottom: 0;
+    padding: 15px;
+    padding-right: 206px;
+    .termos{
+        display: flex;
+        align-items: end;
+        p{
+            display: contents;
+            color: white;
+            font-size: 12px;
+        }
+        p:hover{
+            color: rgb(201, 201, 201);
+            cursor: pointer;
+        }
+    }
+    #metal{
+        color: white;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        font-size: 20px;
+    }
 }

@@ -1,0 +1,296 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: verdana;
+}
+body{
+    font-size: 16px;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    grid-template-columns: 5vw 89vw 5vw;
+    grid-template-rows: 15vh 220vh 6.8vh;
+}
+.header{
+    height: 15vh;
+    grid-area: header;
+    background-color: #10454F;
+    display: flex;
+    img{
+        display: flex;
+        margin-top: 1%;
+        margin-left: 1%;
+        position: absolute;
+        height: 100px;
+        max-block-size: 10%;
+        min-block-size: 10%;
+    }
+    .a1{
+        color: white;
+        font-size: 1rem;
+        display: flex;
+        margin: 15px;
+    }
+    .a1:hover{
+        color: rgb(201, 201, 201);
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+    #a1{
+        margin-left: 200px;
+    }
+    .paragraph{
+        display: flex;
+        margin: auto;
+    }
+    .buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        margin: 15px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 125px;
+        height: 50px;
+        max-block-size: 35%;
+        border: none;
+        border-radius: 10px;
+        background-color: #4C808B;
+        color: white;
+        font-weight: bold;
+    }
+    button:hover{
+        background-color: #55929e;
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+.aside1{
+    grid-area: aside1;
+}
+.main{
+    grid-area: main;
+    height: 200vh;
+    background-color: rgb(236, 240, 241);
+}
+
+.slider{
+    margin: 0 auto;
+    height: 60vh;
+    width: 99vw;
+    overflow: hidden; /* Para não aparecerem todas as imagens */
+}
+
+.slides{
+    width: 400%;
+    display: flex;
+    height: 400px;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+}
+
+.slide img{
+    width: 99vw;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 99vw;
+    margin-top: -12vh; /*Diminui a margem superior padrão*/
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: .15vw solid white;
+    padding: .35vw;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-btn:hover{
+    background-color: darkcyan;
+}
+
+.manual-btn:not(:last-child) { /* Atribui a configuração para os botões, com exceção do último (last-child)*/
+    margin-right: 1vw;
+}
+
+/*O seletor de irmãos serve para que o código "procure" irmãos de determinado bloco, ou seja, filhos de um mesmo pai/container, mesmo que estejam distantes no código. Nesse caso, os radio são irmãos pois são filhos do mesmo pai, o container slides */
+
+
+/* Primeiramente selecionei o radio1 e defini que quando ele estiver marcado, sua margem esquerda
+será dada como 0, em relação ao primeiro elemento, ou seja, mostrará a primeira imagem*/
+#radio1:checked ~ .first{ 
+    margin-left: 0;
+}
+
+/*Já para mostrar a segunda imagem, quando o radio2 estiver marcado, a margem esquerda irá diminuir em 25% (espaço pra que uma imagem ocupe o container), fazendo com que a imagem2 assuma a posição do container*/
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+/*O seletor ~ (de irmãos) serve para definir que mesmo que hajam imagens entre as outras selecionadas, será considerado o irmão .first, ou seja a primeira imagem, para calcular o deslocamento da margem*/
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{ /*Define configurações para cada div dentro de navigation auto*/
+    border: .15vw solid white;
+    padding: .35vw;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.navigation-auto { /*Define configurações para o navigation auto como um todo*/
+    position: absolute;
+    width: 99vw;
+    margin-top: 54vh;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 1vw;
+}
+
+/*Quando o radio1 estiver marcado, o autobtn1, dentro do navigation auto mudará a cor de seu fundo para essa, e então, manterá essa cor aplicada*/
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: darkcyan;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: darkcyan; 
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: darkcyan;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: darkcyan;
+}
+
+h1 {
+    display: flex;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    justify-content: center;
+}
+
+.img-grid {
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    grid-template-rows: 70vh 70vh;
+    grid-template-areas: 
+    "img1 img2 img3 img4"
+    "img5 img6 img7 img8";
+}
+.img-grid {
+    background-color: rgb(236, 240, 241);
+    img{
+    aspect-ratio: 1/1;
+    width: 19vw;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    }
+    #p1{
+        font-size: 15px;
+        margin-top: 45vh;
+        margin-left: 10vw;
+        text-align: justify;
+    }
+    #p2{
+        color: #10454F;
+        font-size: 15px;
+        margin-top: 57vh;
+        margin-left: 10vw;
+    }
+    p:hover{
+        cursor: pointer;
+    }
+}
+
+.img1 {
+    grid-area: img1;
+}
+.img2 {
+    grid-area: img2;
+}
+.img3 {
+    grid-area: img3;
+}
+.img4 {
+    grid-area: img4;
+}
+.img5 {
+    grid-area: img5;
+}
+.img6 {
+    grid-area: img6;
+}
+.img7 {
+    grid-area: img7;
+}
+.img8 {
+    grid-area: img8;
+}
+
+
+.aside2{
+    grid-area: aside2;
+}
+.footer{
+    max-width: 99vw;
+    height: 6.8vh;
+    grid-area: footer;
+    background-color: #061f24;
+    display: flex;
+    position: aboslute;
+    bottom: 0;
+    padding: 15px;
+    padding-right: 206px;
+    .termos{
+        display: flex;
+        align-items: end;
+        p{
+            display: contents;
+            color: white;
+            font-size: 12px;
+        }
+        p:hover{
+            color: rgb(201, 201, 201);
+            cursor: pointer;
+        }
+    }
+    #metal{
+        color: white;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        font-size: 20px;
+    }
+}
